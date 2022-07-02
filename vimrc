@@ -1,4 +1,3 @@
-
 " Display settings
 set showcmd 	" Show (partial) command in status line.
 set showmatch 	" Show matching brackets.o
@@ -38,3 +37,24 @@ set mouse=a 	" Enable mouse usage (all modes)
 set matchpairs+=<:>
 
 runtime! ftplugin/man.vim
+
+
+" Maps
+nmap t<Space>c :tabclose <CR>
+nmap t<Space>f <C-w>\|
+nmap t<Space>e <C-w>=
+
+
+"Plugins
+set rtp+=/home/kisi/.vim/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'preservim/nerdtree'
+
+call vundle#end()
+
+" System
+set fileformat=unix
+
+
+
